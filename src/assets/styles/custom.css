@@ -16,3 +16,7 @@ h1#site-title a {
 .publish-date {
   font-size: 0.9rem;
 }
+
+.link-to-post h2 {
+  margin-bottom: 0;
+}
