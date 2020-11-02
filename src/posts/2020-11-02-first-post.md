@@ -1,13 +1,11 @@
 ---
-title: 'My first post'
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+title: 'Hello world'
+description: Welcome to my blog.
 date: 2020-11-02
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+The time has come to create a blog. For long I have been trying to convince myself that no one wants to read my thougts and that there is no point in posting the solution to an every day problem which I have solved.
 
-```js
-function getRandomNumber() {
-  return 4; // <3 xkcd
-}
-```
+One of my great colleguages convinced me to do it anyway. So, here I am.
+
+Welcome to my blog! 🙇‍♂️
