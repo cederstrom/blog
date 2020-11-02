@@ -45,7 +45,6 @@
     "prettier": "^2.1.2",
     "rimraf": "^3.0.2",
     "serve": "^11.3.2",
-    "tailwindcss": "^1.6.2",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-fix-style-only-entries": "^0.5.1"
