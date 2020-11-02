@@ -9,6 +9,7 @@ const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
 const entries = glob.sync(path.resolve(__dirname, 'src/assets/images/posts/*.{png,gif,jpg,jpeg}'));
 entries.push(path.resolve(__dirname, 'src/assets/styles/water.light.css'));
 entries.push(path.resolve(__dirname, 'src/assets/styles/prism.css'));
+entries.push(path.resolve(__dirname, 'src/assets/styles/custom.css'));
 
 let cssFileName = 'styles/[name].css';
 

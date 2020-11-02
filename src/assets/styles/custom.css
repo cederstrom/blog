@@ -1,0 +1,18 @@
+html {
+  margin-top: 1rem;
+}
+
+h1#site-title {
+  font-size: 2rem;
+}
+h1#site-title a {
+  color: black;
+}
+
+#primary-nav {
+  margin-top: 1rem;
+}
+
+.publish-date {
+  font-size: 0.9rem;
+}

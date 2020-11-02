@@ -2,10 +2,14 @@
 layout: layouts/base.ejs
 ---
 
+<nav id="primary-nav" aria-label="Primary navigation">
+  <a href="/">Back to overview</a>
+</nav>
+
 <article>
   <header>
     <h1><%= title %></h1>
-    <i><%= this.dateFns.format(new Date(date), 'yyyy-MM-dd') %></i>
+    <i class="publish-date">Publised on <%= this.dateFns.format(page.date, 'yyyy-MM-dd') %></i>
   </header>
 
   <section><%- content %></section>
