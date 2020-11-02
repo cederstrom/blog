@@ -4,11 +4,9 @@ layout: layouts/base.ejs
 
 <article>
   <header>
-    <h1 class="text-center font-bold text-3xl text-gray-800"><%= title %></h1>
-    <div class="text-center text-sm mb-8">
-      <%= this.dateFns.format(new Date(date), 'LLLL d, yyyy') %>
-    </div>
+    <h1><%= title %></h1>
+    <i><%= this.dateFns.format(new Date(date), 'yyyy-MM-dd') %></i>
   </header>
 
-  <section class="content"><%- content %></section>
+  <section><%- content %></section>
 </article>
