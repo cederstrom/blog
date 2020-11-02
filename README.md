@@ -4,7 +4,7 @@
   <a href="https://creativedesignsguru.com/demo/Eleventy-Starter-Boilerplate/eleventy-starter-boilerplate-presentation/"><img src="public/assets/images/eleventy-js-starter-boilerplate.png?raw=true" alt="Eleventy starter banner"></a>
 </p>
 
-🚀 Eleventy Starter Boilerplate is production-ready with SEO-friendly for quickly starting a blog. ⚡️ Built with [Eleventy](https://www.11ty.dev), [ESLint](https://eslint.org), [Prettier](https://prettier.io), [Webpack](https://webpack.js.org), [PostCSS](https://postcss.org), [Tailwind CSS](https://tailwindcss.com) and [Netlify CMS](https://www.netlifycms.org) (optional).
+🚀 Eleventy Starter Boilerplate is production-ready with SEO-friendly for quickly starting a blog. ⚡️ Built with [Eleventy](https://www.11ty.dev), [ESLint](https://eslint.org), [Prettier](https://prettier.io), [Webpack](https://webpack.js.org), [PostCSS](https://postcss.org), [Tailwind CSS](https://tailwindcss.com).
 
 Clone this project and use it to create your own [Eleventy](https://www.11ty.dev) blog. You can check a [Eleventy templates demo](https://creativedesignsguru.com/demo/Eleventy-Starter-Boilerplate/eleventy-starter-boilerplate-presentation/).
 
@@ -32,7 +32,6 @@ Production-ready in mind:
 - ✅ Cache busting
 - 💯 Maximize lighthouse score
 - 🌈 Include a FREE minimalist blog theme
-- 🗒 Netlify CMS (optional)
 
 ### Philosophy
 
@@ -46,12 +45,12 @@ Production-ready in mind:
 
 ### Premium Themes ([Eleventy Themes](https://creativedesignsguru.com/category/eleventy/))
 
-| [Blue Dark Eleventy Theme](https://creativedesignsguru.com/blue-dark-eleventy-theme/) | [Blue Eclatant Eleventy Theme](https://creativedesignsguru.com/blue-eclatant-eleventy-theme/) |
-| --- | --- |
+| [Blue Dark Eleventy Theme](https://creativedesignsguru.com/blue-dark-eleventy-theme/)                                                                                                                | [Blue Eclatant Eleventy Theme](https://creativedesignsguru.com/blue-eclatant-eleventy-theme/)                                                                                                               |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [![Blue Dark Eleventy Theme premium](https://creativedesignsguru.com/assets/images/themes/blue-dark-mode-eleventy-theme-homepage-xs.png)](https://creativedesignsguru.com/blue-dark-eleventy-theme/) | [![Blue Eclatant Eleventy Theme premium](https://creativedesignsguru.com/assets/images/themes/eclatant-blue-eleventy-theme-homepage-xs.png)](https://creativedesignsguru.com/blue-eclatant-eleventy-theme/) |
 
-| [Blue Modern Eleventy Theme](https://creativedesignsguru.com/blue-modern-eleventy-theme/) | [Blue Minimalist Eleventy Theme](https://creativedesignsguru.com/blue-minimalist-eleventy-theme/) |
-| --- | --- |
+| [Blue Modern Eleventy Theme](https://creativedesignsguru.com/blue-modern-eleventy-theme/)                                                                                                             | [Blue Minimalist Eleventy Theme](https://creativedesignsguru.com/blue-minimalist-eleventy-theme/)                                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [![Blue Modern Eleventy Theme premium](https://creativedesignsguru.com/assets/images/themes/modern-blue-eleventy-theme-homepage-xs.png)](https://creativedesignsguru.com/blue-modern-eleventy-theme/) | [![Blue Minimalist Eleventy Theme premium](https://creativedesignsguru.com/assets/images/themes/minimalist-blue-eleventy-theme-homepage-xs.png)](https://creativedesignsguru.com/blue-minimalist-eleventy-theme/) |
 
 ### Getting started
@@ -98,7 +97,6 @@ You can easily configure Eleventy Starter Boilerplate. Please change the followi
 - `public/apple-touch-icon.png`, `public/favicon.ico`, `public/favicon-16x16.png` and `public/favicon-32x32.png`: your blog favicon, you can generate from https://favicon.io/favicon-converter/
 - `src/_data/site.json`: your blog configuration
 - `src/_includes/layouts`: your blog HTML layout
-- `src/assets/styles/main.css`: your blog CSS file using Tailwind CSS
 
 ### Deploy to production
 
@@ -117,20 +115,6 @@ npm run build
 ```
 
 Now, your blog is ready to be deployed. All generated files are located at `_site` folder, which you can deploy with any hosting service.
-
-### Deploy to Netlify
-
-Clone this repository on own GitHub account and deploy to Netlify:
-
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ixartz/Eleventy-Starter-Boilerplate&stack=cms)
-
-### Remove Netlify files and Netlify CMS
-
-If you don't use Netlify, you can easily remove all Netlify related files:
-
-- `public/admin`, the entier folder
-- `src/_includes/layouts/base.ejs`, the loaded script `netlify-identity-widget.js` and the inline script `if (window.netlifyIdentity) { ...`
-- `netlify.toml`, the entire file
 
 ### Contributions
 
