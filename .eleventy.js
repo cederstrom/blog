@@ -25,7 +25,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.setBrowserSyncConfig({
-    files: './_site/assets/styles/main.css',
+    files: './_site/assets/styles/water.light.css',
   });
 
   eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
