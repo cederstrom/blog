@@ -1,8 +1,8 @@
 {
-  "site_name": "Starter",
-  "title": "Eleventy Starter Boilerplate",
-  "description": "Starter code for your 11ty blog Boilerplate",
-  "url": "https://example.com",
+  "site_name": "Andreas Cederström",
+  "title": "Andreas Cederström",
+  "description": "A blog by Andreas Cederström. Developer, coding architect at factor10, Sweden.",
+  "url": "https://kmem.se",
   "locale": "en",
-  "author": "Anonymous"
+  "author": "Andreas Cederström"
 }
