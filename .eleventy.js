@@ -25,6 +25,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter('date', (date) => date.toISOString().substring(0, 10));
+  eleventyConfig.addFilter('isoDate', (date) => date.toISOString());
 
   eleventyConfig.setBrowserSyncConfig({
     files: './_site/assets/styles/main.css',
