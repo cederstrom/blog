@@ -28,10 +28,14 @@ jobs:
       - run: npm run build
 
       - name: Run Cypress tests
-        uses: cypress-io/github-action@v1
+        uses: cypress-io/github-action@v2
         with:
           start: npm run dev
           wait-on: 'http://localhost:8080'
+          record: true
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy to GH Pages
         uses: peaceiris/actions-gh-pages@v3
