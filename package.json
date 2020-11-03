@@ -16,7 +16,9 @@
     "format:js": "prettier '**/*.js' --write && eslint '**/*.js' --fix",
     "format:json": "prettier '**/*.json' --write",
     "format": "run-s format:*",
-    "lint": "eslint --ext .js ."
+    "lint": "eslint --ext .js .",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "license": "ISC",
   "devDependencies": {
@@ -27,10 +29,12 @@
     "cross-env": "^7.0.2",
     "css-loader": "^4.2.1",
     "cssnano": "^4.1.10",
+    "cypress": "^5.5.0",
     "date-fns": "^2.15.0",
     "eleventy-plugin-lazyimages": "^2.0.1",
     "eslint": "^7.10.0",
     "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-cypress": "^2.11.2",
     "eslint-plugin-import": "^2.22.1",
     "file-loader": "^6.0.0",
     "glob": "^7.1.6",
