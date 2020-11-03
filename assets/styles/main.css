@@ -135,7 +135,7 @@ h6 {
   color: var(--text-bright);
 }
 
- {
+strong {
   color: #000;
   color: var(--text-bright);
 }
@@ -145,7 +145,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+strong {
   font-weight: 600;
 }
 
@@ -517,7 +518,7 @@ a:hover {
   text-decoration: underline;
 }
 
- {
+code {
   background: #efefef;
   background: var(--background);
   color: #000;
@@ -582,7 +583,7 @@ time {
   border-top: 1px solid var(--border);
 }
 
- {
+table {
   border-collapse: collapse;
   margin-bottom: 10px;
   width: 100%;
@@ -711,7 +712,8 @@ body > footer {
 }
 
 @media print {
-  body {
+  body,
+  code {
     background-color: #fff;
   }
 
@@ -726,7 +728,9 @@ body > footer {
   h4,
   h5,
   h6,
-  footer {
+  code,
+  footer,
+  strong {
     color: #000;
   }
 
@@ -756,7 +760,7 @@ https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javasc
  * @author Lea Verou
  */
 
- {
+code[class*="language-"] {
 	color: black;
 	background: none;
 	text-shadow: 0 1px white;
@@ -778,23 +782,23 @@ https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javasc
 	hyphens: none;
 }
 
- {
+code[class*="language-"]::-moz-selection {
 	text-shadow: none;
 	background: #b3d4fc;
 }
 
- {
+code[class*="language-"]::-moz-selection {
 	text-shadow: none;
 	background: #b3d4fc;
 }
 
- {
+code[class*="language-"]::selection {
 	text-shadow: none;
 	background: #b3d4fc;
 }
 
 @media print {
-	 {
+	code[class*="language-"] {
 		text-shadow: none;
 	}
 }
