@@ -30,7 +30,6 @@
     "css-loader": "^4.2.1",
     "cssnano": "^4.1.10",
     "cypress": "^5.5.0",
-    "date-fns": "^2.15.0",
     "eleventy-plugin-lazyimages": "^2.0.1",
     "eslint": "^7.10.0",
     "eslint-config-airbnb-base": "^14.2.0",

@@ -1,5 +1,4 @@
 const htmlmin = require('html-minifier');
-const dateFns = require('date-fns');
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
@@ -19,9 +18,6 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setEjsOptions({
     rmWhitespace: true,
-    context: {
-      dateFns,
-    },
   });
 
   eleventyConfig.addFilter('date', (date) => date.toISOString().substring(0, 10));
