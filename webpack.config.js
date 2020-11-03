@@ -37,7 +37,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'webpack.html'),
-      filename: path.resolve(__dirname, 'src/_includes/layouts/webpack.ejs'),
+      filename: path.resolve(__dirname, 'src/_includes/layouts/webpack.liquid'),
       inject: false,
     }),
   ],

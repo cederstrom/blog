@@ -5,7 +5,7 @@ const uncss = require('postcss-remove-unused-css');
 plugins.push(
   uncss({
     path: './src',
-    exts: '.ejs, .md. html',
+    exts: '.liquid, .md. html',
   }),
 );
 

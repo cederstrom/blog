@@ -1,0 +1,16 @@
+---
+layout: layouts/base.liquid
+---
+
+<nav id="primary-nav" aria-label="Primary navigation">
+  <a href="/">Back to overview</a>
+</nav>
+
+<article>
+  <header>
+    <h1>{{ title }}</h1>
+    <i class="publish-date">Publised on {{ page.date | date }}</i>
+  </header>
+
+  <section>{{ content }}</section>
+</article>

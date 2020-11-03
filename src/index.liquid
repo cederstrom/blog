@@ -1,0 +1,36 @@
+---
+pagination:
+  data: collections.posts
+  size: 5
+  alias: posts
+  reverse: true
+permalink: "{% if pagination.pageNumber > 0%}{{ pagination.pageNumber }}/index.html{% else %}index.html{% endif %}"
+---
+
+<nav aria-label="Primary navigation" testid="posts">
+  {% for post in posts %}
+  <article class="link-to-post">
+    <h2>
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+    </h2>
+    <i class="publish-date">Publised on {{ post.data.date | date }}</i>
+    <div>{{ post.data.description }}</div>
+  </article>
+  {% endfor %}
+</nav>
+
+{% if pagination.pageLinks.length > 1 %}
+<nav aria-label="Pagination" style="margin-top: 3rem;">
+  {% if pagination.previousPageLink %}
+    <a href="{{ pagination.previousPageHref | url }}">Newer Articles</a>
+  {% else %}
+    <span>Newer Articles</span>
+  {% endif %}
+
+  {% if pagination.nextPageLink %}
+    <a href="{{ pagination.nextPageHref | url }}">Older Articles</a>
+  {% else %}
+    <span>Older Articles</span>
+  {% endif %}
+</nav>
+{% endif %}
