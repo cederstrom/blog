@@ -25,7 +25,7 @@ context('When visiting main page', () => {
     });
 
     it('Heading shall be clickable', () => {
-      lastBlogPost().get('h2 > a').should('have.attr', 'href', '/hello-world/');
+      lastBlogPost().within(() => cy.get('h2 > a').should('have.attr', 'href', '/hello-world/'));
     });
 
     it('Shall have published date', () => {
